@@ -2,6 +2,8 @@ language: node_js
 services: mongodb
 node_js:
 - 0.10.38
+before_script:
+- mongo mydb_test --eval 'db.addUser("root", "");'
 install:
 - npm install
 - zip -r uptime-cf ./*
