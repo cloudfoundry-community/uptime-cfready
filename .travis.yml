@@ -1,0 +1,15 @@
+language: node_js
+sudo: required
+node_js:
+- 0.10.38
+install:
+- npm install
+- zip -r uptime-cf ./*
+deploy:
+  provider: releases
+  api_key:
+    secure: N7/Ifgm7rFo07RwX2CC3K0IH3DISmW2hLYFfcZCa3hLrmR4QA9IwchdIJWA3GVvXza4RyxCwWsR5TJEdEDdYxptOMEZZ1H3XEYTS1uqLtjsLCo36ZP/1p8DxVPCQ8H2TceyWZlTo/8d+cvv57AbzS1K43DbwQMdlccaRVXrhzoY=
+  file: uptime-cf.zip
+  on:
+    tags: true
+    all_branches: true
