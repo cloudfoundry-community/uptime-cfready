@@ -1,4 +1,4 @@
 mongodb:
   server:   localhost
-  database: uptime-test
+  database: mydb_test
   user:     root
