@@ -8,7 +8,8 @@ var connectionString = config.mongodb.connectionString || 'mongodb://' + config.
 var appEnv = cfenv.getAppEnv();
 var mongodbService = appEnv.getService(/.*mongodb.*/i);
 if(mongodbService != null){
-  connectionString = mongodbService.credentials.url;
+  console.log(mongodbService);
+  connectionString = mongodbService.credentials.url || mongodbService.credentials.uri;
   config.mongodb.user = mongodbService.credentials.username;
   config.mongodb.password = mongodbService.credentials.password;
 }
