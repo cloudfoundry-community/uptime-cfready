@@ -4,6 +4,7 @@ node_js:
 - 0.10.38
 before_script:
 - mongo mydb_test --eval 'db.addUser("root", "test");'
+- export NODE_ENV=test
 install:
 - npm install
 - zip -r uptime-cf ./*
