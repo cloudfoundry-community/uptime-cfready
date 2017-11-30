@@ -1,23 +1,23 @@
 {
-  "name":    "node-uptime",
+  "name": "node-uptime",
   "description": "Remote monitoring for HTTP applications",
   "version": "3.2.0",
   "author": "Francois Zaninotto",
   "dependencies": {
     "cfenv": "1.0.0",
-    "mongoose":  "3.8.27",
+    "mongoose": "3.8.27",
     "mongoose-lifecycle": "1.0.0",
-    "express":   "3.2.0",
+    "express": "3.2.0",
     "express-partials": "0.1.1",
     "connect-flash": "0.1.0",
-    "ejs":       "0.8.3",
-    "config":    "0.4.32",
-    "async":     "0.1.22",
+    "ejs": "0.8.3",
+    "config": "0.4.32",
+    "async": "0.1.22",
     "socket.io": "0.9.14",
-    "semver":    "1.1.0",
-    "moment":    "2.1.0",
+    "semver": "1.1.0",
+    "moment": "2.19.3",
     "nodemailer": "0.3.35",
-    "net-ping":  "1.1.7",
+    "net-ping": "1.1.7",
     "js-yaml": "2.1.0",
     "webpagetest": "0.2.0"
   },
@@ -25,7 +25,12 @@
     "mocha": "1.7.x",
     "should": "1.1.0"
   },
-  "keywords": ["uptime", "monitoring", "api", "check"],
+  "keywords": [
+    "uptime",
+    "monitoring",
+    "api",
+    "check"
+  ],
   "repository": "https://github.com/fzaninotto/uptime",
   "license": "MIT",
   "engines": {
